@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>8-Ball Magic</title>
+</head>
+<body>
+    <div class="game">
+        <div class="question">
+            <input type="text" id="check" placeholder="Enter your question..." value ="">
+        </div>
+        <div class="ball">
+            <img src="assets/8ball.gif">
+        </div>
+        <div class="submit">
+            <button type="submit" onclick="clickMe()" >Reveal the answer...</button>
+        </div>
+        <div id="alert-background">
+            <div id="alert">
+                <span id="close" onclick="closeMe()">&times;</span>
+                <p>Please enter your question. Include a question mark.</p>
+            </div>
+        </div>
+        <div id="answer">
+            <p id="answer-1"></p>
+        </div>
+        <div id="replay" onclick="restart()">
+            <h3>Play again</h3>
+        </div>
+    </div>
+</body>
+</html>
